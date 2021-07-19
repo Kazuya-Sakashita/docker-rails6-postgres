@@ -26,7 +26,7 @@ if(/chat_rooms/.test(location.pathname)) {
       
       const chat_room_id = $('textarea').data('chat_room_id')
       
-      appChatRoom.speak(e.target.value);
+      appChatRoom.speak(e.target.value, chat_room_id);
       e.target.value = '';
       e.preventDefault();
     }
